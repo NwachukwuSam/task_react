@@ -103,24 +103,3 @@ function Login() {
   export default Login;
   
 
-    {/* <div className="text-center">
-            <form onSubmit={handleSubmit}>
-                <div className="email">
-                <input className="rounded-[10px] border-[2px] px-3 py-3 ml-[-250px] max-w-xs"
-                    type="text"
-                    id="email" 
-                    value={email}
-                    onChange={handChangeEmail}
-                    placeholder="example@gmail.com"
-                />
-                </div>
-                <div className="password">
-                <input className="rounded-[10px] border-[2px] px-3 py-3 ml-[-250px] max-w-xs mt-10"
-                    type="password"
-                    id="password"
-                    value={password}
-                    onChange={handleChangePassword}
-                    placeholder="Enter your password"
-                ></input>
-                </div>
-            </form> */}
