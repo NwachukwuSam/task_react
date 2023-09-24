@@ -1,18 +1,19 @@
-import Footer from './components/footer';
-import Login from './components/login';
-import TopNav from './components/topNav';
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from './pages/home';
+import WelcomePage from "./pages/welcomePage";
 
 
 
 function App() {
   return (
-    <div>
-      <TopNav/>
-      <Login/>
-      <Footer/>
-    </div>
+    <Router>
+    <Routes>
+      <Route path="/" element={<Home/>} />
+      <Route path="/welcome" element={<WelcomePage/>} />
+    </Routes>
+  </Router>
     
   );
 }
-
 export default App;

@@ -1,4 +1,4 @@
-import { footerData } from "./footerData";
+import { footerData } from "../data/footerData";
 import logo from "../assets/logo/logo.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
@@ -17,8 +17,8 @@ const Footer = () => {
           <div className="flex justify-center flex-wrap space-x-[50px] mt-[-100px] ml-[100px]">
             {footerData.map((footer, index) => {
               return (
-                <div className=" hover:text-blue-700" key={index}>
-                  <a href={footer.link} className=" text-gray-50">
+                <div className=" " key={index}>
+                  <a href={footer.link} className=" text-gray-50 hover:text-blue-700">
                     <p>{footer.item}</p>
                   </a>
                 </div>

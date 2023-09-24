@@ -11,9 +11,9 @@ function TopNav() {
                 <h6 className="mb-[20px]">
                 
                     <span className="space-x-10  ml-[650px] ">
-                        <span className="hover:text-blue-600 cursor-pointer"><a href="#home"></a>Home</span>
-                        <span className="hover:text-blue-600 cursor-pointer"><a href="#about">About</a></span>
-                        <span className="hover:text-blue-600 cursor-pointer"><a href="#contactUs" >Contact Us</a></span>
+                        <span className="hover:text-lime-400 cursor-pointer"><a href="#home"></a>Home</span>
+                        <span className="hover:text-lime-400 cursor-pointer"><a href="#about">About</a></span>
+                        <span className="hover:text-lime-400 cursor-pointer"><a href="#contactUs" >Contact Us</a></span>
                     </span>
                 </h6>
          </div>
