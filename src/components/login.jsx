@@ -39,7 +39,7 @@ function Login() {
     setErrors(formErrors);
 
     if (Object.keys(formErrors).length === 0) {
-       navigate("/welcome");
+       navigate("/successful");
     }
   };
 

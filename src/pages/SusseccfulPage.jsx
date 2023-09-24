@@ -1,9 +1,9 @@
 import Footer from "../components/footer";
 import TopNav from "../components/topNav";
-import Welcome from "../components/welcome";
+import Welcome from "../components/successful";
 
 
-function WelcomePage() {
+function SuccessfulPage() {
     return (
     <div>
         <TopNav/>
@@ -15,5 +15,5 @@ function WelcomePage() {
   }
   
   
-  export default WelcomePage;
+  export default SuccessfulPage;
   

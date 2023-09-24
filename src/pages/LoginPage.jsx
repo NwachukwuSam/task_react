@@ -3,7 +3,7 @@ import Login from "../components/login";
 import TopNav from "../components/topNav";
 
 
-function Home() {
+function LoginPage() {
     return (
     <div>
         <TopNav/>
@@ -13,5 +13,5 @@ function Home() {
 );
 }
       
-export default Home;
+export default LoginPage;
       

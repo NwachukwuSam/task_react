@@ -1,7 +1,7 @@
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from './pages/home';
-import WelcomePage from "./pages/welcomePage";
+import Home from './pages/LoginPage';
+import SuccessfulPage from "./pages/SusseccfulPage";
 
 
 
@@ -10,7 +10,7 @@ function App() {
     <Router>
     <Routes>
       <Route path="/" element={<Home/>} />
-      <Route path="/welcome" element={<WelcomePage/>} />
+      <Route path="/successful" element={<SuccessfulPage/>} />
     </Routes>
   </Router>
     
