@@ -1,15 +1,21 @@
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { deleteUser } from "../features/userReducer";
 
 
 function Successful() {
     const users = useSelector((state) => state.users);
     const navigate = useNavigate();
+    const dispatch = useDispatch();
     
     const handleAddUser =() => {
         navigate('/addUser');
     }
+    const handleDelete = (id) =>{
+         dispatch(deleteUser({id: id}))
+    }
+    
 
     return (
     <div className="h-[500px] pt-[30px] w-full bg-white">
@@ -37,9 +43,11 @@ function Successful() {
                             <td className="border-blue-400 border">{user.gender}</td>
                             <td className="border-blue-400 border">{user.age}</td>
                             <td className="border-blue-400 border">{user.email}</td>
-                            <td className=" space-x-1">
-                                <button className="bg-green-500 rounded-md text-white py-1 px-2">Edit</button>
-                                <button className="bg-red-500 rounded-md text-white py-1 px-2">Delete</button>
+                            <td className=" space-x-2">
+                                <button onClick= {()=>navigate(`/editUser/${user.id}`)}
+                                className="bg-green-500 rounded-md text-white py-1 px-2">Edit</button>
+                                <button onClick= {()=>handleDelete(user.id)}
+                                className="bg-red-500 rounded-md text-white py-1 px-2">Delete</button>
                             </td>
                         </tr>
                     ))}
